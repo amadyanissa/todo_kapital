@@ -2,7 +2,6 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.sass'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
-import firebase from "firebase"
 import { AddButton } from "../src/components/button"
 import Modal, {AddForm, EditForm} from "../src/components/modals"
 import { useDispatch } from "react-redux";
@@ -90,6 +89,10 @@ const tabBody = [
               })
               setSearchResult(filtered)
             }} />
+            <button onClick={() => {
+              localStorage.clear()
+              router.push("/signIn")
+            }} >logout</button>
           </div>
         </div>
           {

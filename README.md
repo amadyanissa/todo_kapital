@@ -10,21 +10,18 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Setting up
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Config
 
-## Learn More
+On folder config, rename `firebase.js.template` to `firebase.js` and fill in the credentials
 
-To learn more about Next.js, take a look at the following resources:
+### .env
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+rename `.env.template` to `.env` and fill in the credentials
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Run the program
 
-## Deploy on Vercel
+`npm run dev`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The program will run on http://localhost:3000
