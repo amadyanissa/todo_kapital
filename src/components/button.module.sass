@@ -1,0 +1,53 @@
+.container
+  display: flex
+  height: 40px
+  align-items: center
+  background-color: #3A7EEC
+  color: white
+  font-size: 20px
+  font-weight: 500
+  border-radius: 4px
+  width: 260px
+  padding: 5px
+  justify-content: center
+  &:hover
+    cursor: pointer
+
+.icon
+  margin-right: 10px
+
+.add
+  display: flex
+  position: fixed
+  z-index: 100
+  bottom: 20px
+  right: 20px
+  width: 80px
+  height: 80px
+  background-color: #325F8C
+  color: white
+  align-items: center
+  text-align: center
+  justify-content: center
+  border-radius: 50%
+  transition: transform 2s, font-size 2s
+  flex-direction: column
+
+.add:hover
+  cursor: pointer
+  color: #325F8C
+  background-color: white
+  transform: rotate(180deg)
+  font-size: 30px
+
+.add .text
+  font-size: 18px
+  transition: color 2s, font-size 2s
+
+.add .text:hover
+  color: white
+  font-size: 5px
+
+@media (max-width: 600px)
+  .add
+    display: none
